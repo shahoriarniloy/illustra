@@ -65,10 +65,10 @@ const Banner = () => {
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/50">
-        <p data-aos="fade-up" className="text-2xl sm:text-3xl font-semibold mb-4">
+        <p data-aos="fade-in" className="text-2xl sm:text-3xl font-semibold mb-4">
           Light Up Your Home with Illustra
         </p>
-        <p data-aos="fade-up" className="text-sm mb-12">
+        <p data-aos="fade-in" className="text-sm mb-12">
           Explore our collection today and add a touch of creativity to your home! Transform any space with our stunning collection of lighting and wall art.
         </p>
         <button className="text-lg px-6 py-2 hover:bg-amber-600 border-2 flex justify-center items-center gap-2">
