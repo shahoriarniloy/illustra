@@ -65,7 +65,7 @@ const Banner = () => {
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/50">
-        <p data-aos="fade-in" className="text-2xl sm:text-3xl font-semibold mb-4">
+        <p data-aos="fade-in" className="text-4xl sm:text-3xl font-semibold mb-4">
           Light Up Your Home with Illustra
         </p>
         <p data-aos="fade-in" className="text-sm mb-12">

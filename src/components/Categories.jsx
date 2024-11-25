@@ -23,16 +23,16 @@ const Categories = () => {
   ];
 
   return (
-    <div className='mt-12'>
+    <div className='mt-0'>
         <div className="grid grid-cols-7 gap-0 w-full   ">
       {images.map((image, index) => (
         <div key={index} className=" relative flex flex-col items-center justify-center border-2 p-6 transform transition-transform duration-500 ease-in-out  hover:scale-105" >
-          <div data-aos="fade-in">
+          <div data-aos="fade-in" className='flex flex-col items-center justify-center'>
           <Image
             src={image.src}
             alt={image.alt}
-            width={80} 
-            height={80} 
+            width={60} 
+            height={60} 
             objectFit="contain"
           />
           <p className='text-lg mt-2'>{image.alt}</p>
