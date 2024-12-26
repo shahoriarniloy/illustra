@@ -8,8 +8,10 @@ export default function Home() {
     <div>
       <main className="">
         <Banner></Banner>
+       
         <Categories></Categories>
         <TopSelling></TopSelling>
+      
         
         
       </main>

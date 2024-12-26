@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { FiShoppingCart, FiUser, FiSearch, FiMenu, FiX } from 'react-icons/fi';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Heading = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,9 +29,21 @@ const Heading = () => {
   }
   return (
     <nav className='text-black'>
-      <p className='w-full text-amber-500 text-sm text-center bg-gray-100 py-2'>
-        PRE-BLACK FRIDAY <span className='text-red-700'>SALE! 10%</span> Off Sitewide
-      </p>
+     <div className="w-full py-2 bg-gradient-to-r from-slate-100 to-slate-50 overflow-hidden" >
+  <div className="carousel">
+    <p className="text-amber-500 text-sm text-center" >
+      PRE-BLACK FRIDAY <span className="text-red-700">SALE! 10%</span> Off Sitewide
+    </p>
+    <p className="text-amber-500 text-sm text-center" >
+      Shop Now and Save Big – Limited Time Offer!
+    </p>
+    <p className="text-amber-500 text-sm text-center" >
+      Hurry, Deals End Soon – Don’t Miss Out!
+    </p>
+  </div>
+</div>
+
+      
       <div className='flex justify-between py-4 px-4 sm:px-24 items-center'>
         <p className='text-black text-2xl'>Illustra</p>
         <div className='hidden sm:flex gap-6'>

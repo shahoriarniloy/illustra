@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import { Sparkles } from './Sparkles';
 
 const Banner = () => {
   useEffect(() => {
@@ -65,7 +66,7 @@ const Banner = () => {
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/50">
-        <p data-aos="fade-in" className="text-4xl sm:text-3xl font-semibold mb-4">
+        <p data-aos="fade-in" className="text-4xl sm:text-4xl font-semibold mb-4">
           Light Up Your Home with Illustra
         </p>
         <p data-aos="fade-in" className="text-sm mb-12">
@@ -75,6 +76,15 @@ const Banner = () => {
           Shop Now <FaArrowRight />
         </button>
       </div>
+      <Sparkles
+            density={30}
+            speed={0.4}
+            size={1.2}
+            direction='top'
+            opacitySpeed={2}
+            color='#FFD700'
+            className='absolute inset-x-0 bottom-0 h-full w-full '
+          />
     </div>
   );
 };
